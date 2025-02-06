@@ -25,7 +25,8 @@ body {
 }
 
 .a-navbar-2 {
-  align-items: center;
+  display: flex;
+  
   text-decoration: none;
   width: 100%;
   height: 100%;
