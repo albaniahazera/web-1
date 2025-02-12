@@ -1,0 +1,227 @@
+* {
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  .container-fluid-1 {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    color: red;
+  }
+
+  .navbar-2 {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: red;
+    padding: 5px;
+  }
+  
+  .img-navbar-1 {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .tentangsaya {
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #333;
+    color: red;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    width: 20%;
+    height: 20%;
+  }
+  
+  .tentangsaya:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s ease-in-out;
+    transition-delay: 0.1s;
+  }
+
+  .Judul {
+    background-color: #777;
+  }
+
+  h1 {
+    padding: 2px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .conten {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background-color: white;
+  }
+  
+  .image {
+    padding-top: 5px;
+    padding-bottom: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 170px;
+    height: 240px;
+    background-color: #ffffff;
+  }
+
+  h2 {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .garis {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0.5px;
+    background-color: white;
+  }
+
+  .Isi {
+    text-align: justify;
+    margin-top: 50px;
+    padding: 5px;
+  }
+
+
+  .teks-perhatian {
+    margin-top: 45px;
+    margin-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+  }
+
+  .judul-teks-perhatian {
+    text-align: center;
+    font-size: large;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  .list {
+    margin: 5px;
+  }
+
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: aqua;
+  }
+
+  .teks {
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(167, 172, 173, 0.493);
+    color: black;
+  }
+
+  .scroll-container-1 {
+    border: 1px solid #ccc;
+    background-color: rgba(167, 172, 173, 0.493);
+    color: black;
+    border-radius: 5px;
+  }
+
+  .scroll-teks {
+    padding-left: 5px;
+    white-space: nowrap;
+  }
+
+  h4 {
+    margin-top: 6px;
+    margin-bottom: 4px;
+  }
+
+  .container-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  .container-2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 1px solid white;
+  }
+
+  .teks-terimakasih {
+    font-size: large;
+  }
+
+  .link1 {
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+  }
+
+  footer {
+    background-color: #333;
+    text-align: center;
+    padding-bottom: 1px;
+    text-decoration: none;
+  }
+  
+  .text-footer {
+    color: white;
+    font-family: Arial;
+  }
+
+  .text-footer1 {
+    padding-left: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial;
+    color: white;
+  }
+
+  .container-fluid-2 a {
+    text-decoration: none;
+  }
+  
+  .container-fluid-2 a svg {
+    display: inline-block;
+  }

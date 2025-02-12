@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cara memasang server minecraft java pada ubuntu di termux, Klik laman ini untuk informasi lebih lanjut tentang cara memasang server minecraft java pada smartphone dengan menggunakan ubuntu di termux!">
+    <meta name="keywords" content="Smartphone, Hp, Termux, Game, Server, Minecraft, Minecraft Java, Ubuntu.">
+    <meta name="author" content="Albania Hazera, alhazera25">
+    <link rel="stylesheet" href="Style for article/web style 1.css">
+    <link rel="icon" href="Assets/Images/photo_profil_youtube_dan_medsos.jpg">
+    <title>Cara memasang server minecraft java pada ubuntu di termux</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="container-fluid-1">
+          <div class="navbar-2">
+              <img
+                src="Assets/Images/photo_profil_youtube_dan_medsos.jpg"
+                alt="Foto Profil"
+                width="70"
+                height="70"
+                class="img-navbar-1"
+              />Al Hazera25
+          </div>
+          <a href="https://alhazera25.my.id" class="tentangsaya" target="_blank">Tentang Saya</a>
+          </div>
+        </nav>
+      </header>
+    <main>
+        <div class="Judul">
+            <h1>Cara Pasang Server Minecraft Java di Smartphone Menggunakan Ubuntu di Termux</h1>
+        </div>
+        <div class="Isi">
+            <h2>Membuat sebuah smartphone bisa menjadi server untuk minecraft java, Berikut ini cara caranya.</h2>
+            <div class="garis"></div>
+            <div class="teks-perhatian">
+                <p class="judul-teks-perhatian">Harus diperhatikan.</p>
+                <p class="judul-teks-perhatian">Tidak semua smartphone mampu untuk melakukan ini !</p>
+                <div class="garis"></div>
+            <ul class="list">
+                <li>
+                    Smartphone harus memiliki setidaknya 6GB RAM.
+                </li>
+                <li>
+                    Memiliki ROM atau memori internal 128GB.
+                </li>
+                <li>
+                    Minimum kecepatan chipset 2.2 Ghz ( Untuk kurang dari 6 player yang ada didalam server ).  
+                </li>
+            </ul>
+            <div class="garis"></div>
+            <div class="teks">
+            <p class="teks">Apa yang terjadi jika tidak memenuhi spesifikasi minimum diatas ?</p>
+            <p>Server akan tetap bisa berjalan, Tetapi server tidak bisa berjalan mulus dan dipastikan akan ada sedikit keterlambatan tick didalam server</p>
+            </div>
+            </div>
+            <h3>1. Download termux terlebih dahulu di <a href="https://play.google.com/store/apps/details?id=com.termux" class="link" target="_blank">Play Store</a></h3>
+            <div class="container">
+            <div class="conten">
+                <a href="Assets/Images/Termux.jpeg">
+                <img src="Assets/Images/Termux.jpeg" alt="Screenshot tampilan utama termux" class="image">
+                </a>    
+            </div>
+            </div>
+            <p class="teks">Setelah mendownload termux, Masuk ke aplikasinya dan ketikkan perintah dibawah ini</p>  
+            <div class="scroll-container">
+                <p class="scroll-teks">pkg update</p>
+                <p class="scroll-teks">pkg upgrade</p>
+                <p class="scroll-teks">termux-setup-storage</p>
+            </div>
+            <div class="garis"></div>
+            <h4>Penjelasan :</h4>
+            <div class="container-1">
+            <p class="teks">Perintah <span class="scroll-container-1">pkg update</span> berfungsi untuk mengupdate paket, Hal ini bertujuan agar tidak terjadi error atau kesalahan pada saat menginstall sesuatu.</p>
+            <div class="garis"></div>
+            <p class="teks">Perintah <span class="scroll-container-1">pkg upgrade</span> berfungsi untuk mengupgrade paket dan sama tujuannya seperti perintah pertama.</p>
+            <div class="garis"></div>
+            <p class="teks">Perintah <span class="scroll-container-1">termux-setup-storage</span> berfungsi untuk memberikan akses ke storage atau penyimpanan kepada termux, 
+                Hal ini akan mempermudah proses pemindahan file yang sudah didownload langsung melalui smartphone ke dalam termux.
+            </p>      
+            <div class="garis"></div>
+            </div>
+            <h3>2. Install ubuntu untuk termux</h3>
+            <p class="teks">Setelah semua perintah diatas sudah dijalankan, Ketikkan perintah dibawah ini</p>
+            <div class="scroll-container">
+                <p class="scroll-teks">pkg install wget curl proot tar -y</p>
+                <p class="scroll-teks">wget https://raw.githubusercontent.com/tuanpham-dev/termux-ubuntu/master/ubuntu.sh</p>
+                <p class="scroll-teks">chmod +x ubuntu.sh</p>
+                <p class="scroll-teks">bash ubuntu.sh -x xfce4</p>
+            </div>
+            <div class="garis"></div>
+            <h4>Penjelasan :</h4>
+            <div class="container-1">
+                <p class="teks">Perintah <span class="scroll-container">pkg install wget curl proot tar -y</span> berfungsi untuk menginstall paket wget, curl, proot, dan tar</p>
+                <div class="container-1">
+                <div class="container-2">
+                    <p class="teks"><span class="scroll-container-1">pkg install</span> berfungsi sebagai perintah untuk menginstall paket.</p>
+                    <div class="garis"></div>
+                    <p class="teks"><span class="scroll-container-1">wget</span> berfungsi sebagai alat pengunduh file dari web.</p>
+                    <div class="garis"></div>
+                    <p class="teks"><span class="scroll-container-1">curl</span> berfungsi sebagai alat pentransfer data dengan url.</p>
+                    <div class="garis"></div>
+                    <p class="teks"><span class="scroll-container-1">proot</span> berfungsi sebagai alat untuk menjalankan program dengan lingkungan root palsu.</p>
+                    <div class="garis"></div>
+                    <p class="teks"><span class="scroll-container-1">tar</span> berfungsi sebagai alat untuk membuat dan mengekstrak file atau arsip bertipe tar.</p>
+                    <div class="garis"></div>
+                    <p class="teks"><span class="scroll-container-1">-y</span> berfungsi mengkonfirmasi instalasi tanpa meminta persetujuan.</p>
+                </div>
+                </div>
+                <p class="teks">Perintah <span class="scroll-container-1">wget https://raw.githubusercontent.com/tuanpham-dev/termux-ubuntu/master/ubuntu.sh</span> berfungsi untuk menginstall file bernama ubuntu.sh</p>
+                <div class="container-1">
+                    <div class="container-2">
+                        <p class="teks"><span class="scroll-container-1">wget</span> berfungsi untuk mengunduh file dari web.</p>
+                        <div class="garis"></div>
+                        <p class="teks"><span class="scroll-container-1">https://raw.githubusercontent.com/tuanpham-dev/termux-ubuntu/master/ubuntu.sh</span> url file skrip ubuntu.sh yang diunduh.</p>
+                    </div>
+                </div>
+                <p class="teks">Perintah <span class="scroll-container-1">chmod +x ubuntu.sh</span> berfungsi untuk mengubah izin file menjadi eksekutabel, sehingga dapat dijalankan.</p>
+                <div class="container-1">
+                    <div class="container-2">
+                        <p class="teks"><span class="scroll-container-1">chmod</span> berfungsi untuk mengubah izin atas file agar bisa dibaca dan dialankan di sistem operasi berbasis Unix/Linux.</p>
+                        <div class="garis"></div>
+                        <p class="teks"><span class="scroll-container-1">+x</span> sebuah argumen yang berfungsi untuk perintah <span class="scroll-container-1">chmod</span> yang berarti tambah izin eksekusi.</p>
+                    </div>
+                </div>
+                <p class="teks">Perintah <span class="scroll-container-1">bash ubuntu.sh -x xfce4</span> berfungsi untuk menjalankan file bernama ubuntu.sh dengan konfigurasi.</p>
+                <div class="container-1">
+                    <div class="container-2">
+                        <p class="teks"><span class="scroll-container-1">bash</span> Sama seperti <span class="scroll-container">./nama-file.</span> dan berfungsi untuk menjalankan sebuah file.</p>
+                        <div class="garis"></div>
+                        <p class="teks"><span class="scroll-container-1">ubuntu.sh</span> nama file.</p>
+                        <div class="garis"></div>
+                        <p class="teks"><span class="scroll-container-1">-x xfce4</span> berfungsi untuk mengkonfigurasi lingkungan dekstop xfce4 yang akan diinstall.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="garis"></div>
+            <p class="teks">1. Kenapa memilih versi ubuntu ini ?</p>
+            <p class="teks">2. kenapa harus menginstall ubuntu terlebih dahulu ?</p>
+            <div class="container-1">
+                <p class="teks">Jawaban :</p>
+                <div class="container-2">
+                    <p class="teks">1. Saya memilih versi ubuntu ini karena menurut saya ini versi ubuntu untuk termux yang paling lengkap.</p>
+                    <div class="garis"></div>
+                    <p class="teks">2. Karena ini untuk memudahkan dan kenyamanan pada saat menjalankan server, Dan agar tidak terjadi error atau masalah pada saat penginstallan server atau penginstallan hal lainnya yang diperlukan untuk menjalankan server.</p>
+                </div>
+            </div>
+            <p class="teks">Tunggu proses penginstallan ( ini memang cukup lama ), Setelah itu konfigurasi ubuntu sesukamu.</p>
+            <div class="garis"></div>
+            <h3>3. Install java dan server minecraft java</h3>
+            <p class="teks">Setelah selesai menginstall ubuntu di termux, Pastikan kamu sudah menjalankan ubuntu.</p>
+            <p class="teks">ketikan beberapa perintah ini di dalam terminal ubuntu.</p>
+            <div class="container-1">
+                <h4 class="teks">1. Update sistem ubuntu</h4>
+                <div class="scroll-container">
+                    <p class="scroll-teks">sudo apt update && sudo apt upgrade -y</p>
+                </div>
+                <h4 class="teks">2. Install java</h4>
+                <div class="scroll-container">
+                    <p class="scroll-teks">sudo apt install openjdk-8-jdk</p>
+                </div>
+                <div class="container-1">
+                <p class="teks">Periksa versi java</p>
+                <div class="scroll-container">
+                    <p class="scroll-teks">java -version</p>
+                </div>
+                <p class="teks">Jika java sudah diinstall dan terdeteksi oleh ubuntu, Lanjut ke langkah selanjutnya.</p>
+                </div>
+                <h4 class="teks">3. Install server</h4>
+                <div class="scroll-container">
+                    <p class="scroll-teks">mkdir server-mc-java</p>
+                    <p class="scroll-teks">cd server-mc-java</p>
+                    <p class="scroll-teks">wget https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar</p>
+                </div>
+                <h4 class="teks">4. Jalankan server</h4>
+                <div class="scroll-container">
+                    <p class="scroll-teks">java -Xmx4024M -Xms4024M -jar server.jar nogui</p>
+                </div>
+                <div class="container-1">
+                    <p class="teks">Pada saat ini kamu akan melihat pesan di terminal ubuntu untuk menyetujui file eula.txt</p>
+                    <p class="teks">Ketikkan perintah ini untuk menyetujui eula</p>
+                    <div class="scroll-container">
+                        <p class="scroll-teks">nano eula.txt</p>
+                    </div>
+                    <p class="teks">Kamu akan melihat script ini didalam file eula.txt</p>
+                    <div class="scroll-container">
+                        <p class="scroll-teks">eula=false</p>
+                    </div>
+                    <p class="teks">Ubah isi eula menjadi true seperti ini</p>
+                    <div class="scroll-container">
+                        <p class="scroll-teks">eula=true</p>
+                    </div>
+                    <p class="teks">Jalankan kembali server</p>
+                    <div class="scroll-container">
+                        <p class="scroll-teks">java -Xmx4024M -Xms4024M -jar server.jar nogui</p>
+                    </div>
+                    <p class="teks">Kamu juga bisa mengkonfigurasi server dengan cara mengakses file bernama server.properties, Ketikkan perintah ini</p>
+                    <div class="container-1">
+                    <div class="scroll-container">
+                        <p class="scroll-teks">nano server.properties</p>
+                    </div>
+                    <p class="teks">Cari baris script ini didalam file server.propeties</p>
+                    <div class="scroll-container">
+                        <p class="scroll-teks">gamemode=survival</p>
+                        <p class="scroll-teks">difficulty=easy</p>
+                        <p class="scroll-teks">pvp=true</p>
+                        <p class="scroll-teks">max-player=20</p>
+                        <p class="scroll-teks">view-distance=10</p>
+                        <p class="scroll-teks">online-mode=true</p>
+                        <p class="scroll-teks">motd=A Minecraft Server</p>
+                    </div>
+                    <div class="garis"></div>
+                    <h4>Penjelasan :</h4>
+                    <div class="container-1">
+                    <p class="teks">Untuk <span class="scroll-container-1">gamemode=survival</span> bisa diubah ke spectator, creative, hardcore ,dan survival.</p>
+                    <div class="garis"></div>
+                    <p class="teks">Untuk <span class="scroll-container-1">difficulty=easy</span> bisa diubah ke normal, hard, dan easy.</p>
+                    <div class="garis"></div>
+                    <p class="teks">Untuk <span class="scroll-container-1">pvp=true</span> bisa diubah ke false atau true, false akan membuat player tidak bisa menyerang player lain, sedangkan true akan membuat player bisa menyerang player lainnya.</p>
+                    <div class="garis"></div>
+                    <p class="teks">Untuk <span class="scroll-container-1">max-player=20</span> bisa diubah sesukamu dengan isi sebagai angka, Jika kamu membuat isinya 10 berarti hanya 10 player yang bisa masuk ke server kamu.</p>
+                    <div class="garis"></div>
+                    <p class="teks">Untuk <span class="scroll-container-1">view-distance=10</span> bisa diubah sesukamu dengan isi sebagai angka, Sebenarnya ini sama dengan pengaturan chunk di gamenya, Jika kamu mengisi kurang dari 5 maka tampilan dunianya akan menjadi lebih kecil dan sebaliknya jika kamu mengisinya lebih dari 8 maka tampilan dunia akan menjadi lebar.</p>
+                    <div class="garis"></div>
+                    <p class="teks">Untuk <span class="scroll-container-1">online-mode=true</span> bisa diubah ke false atau true, Jika kamu mengubahnya ke false maka player dengan minecraft java bajakan akan bisa masuk.</p>
+                    <div class="garis"></div>
+                    <p class="teks">Untuk <span class="scroll-container-1">motd=A Minecraft Server</span> bisa diubah sesukamu dengan isi sebagai huruf, Ini adalah tampilan nama server kamu.</p>
+                    <div class="garis"></div>
+                    </div>
+                    </div>
+                    <p class="teks">Cara masuk ke server milikmu</p>
+                    <div class="container-1">
+                        <div class="container-1">
+                        <ul>
+                            <li>Masuk ke pengaturan smartphone</li>
+                            <li>Cari tentang ponsel</li>
+                            <li>Masuk ke informasi status</li>
+                            <li>Kamu akan melihat alamat IP, Salin alamat ip tersebut dan masuk ke multiplayer di minecraft</li>
+                            <li>Lalu klik add server, Pada server name biarkan saja begitu dan pada server address isikan alamat IP yang kamu sudah salin tadi</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="teks-terimakasih">
+                Terima kasih telah mengunjungi dan membaca web artikel saya, Semoga info yang
+                saya berikan dapat bermanfaat.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div>
+          <h4 class="text-footer">Ikuti Saya</h4>
+          <p class="text-footer1">
+            Dapatkan info dan konten terbaru dengan mengikuti saya di media
+            sosial
+          </p>
+        </div>
+        <div class="container-fluid-2">
+          <a href="https://www.facebook.com/ALhazeras" target="_blank" rel="noopener"
+            ><svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="link1"
+            >
+              <path
+                d="M22.675 0h-21.35C.596 0 0 .596 0 1.326v21.349C0 23.404.596 24 1.326 24h11.495v-9.294H9.691V11.11h3.13V8.413c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.311h3.587l-.467 3.596h-3.12V24h6.115C23.404 24 24 23.404 24 22.675V1.326C24 .596 23.404 0 22.675 0z"
+                fill="#1877F2"
+              />
+              <path
+                d="M16.805 24v-9.293h3.12l.467-3.596h-3.587V8.413c0-1.048.29-1.763 1.794-1.763l1.918-.001V3.41c-.331-.044-1.469-.143-2.794-.143-2.765 0-4.658 1.688-4.658 4.788v2.696h-3.13v3.596h3.13V24h3.805z"
+                fill="#FFF"
+              />
+              <title>Ikuti saya di facebook</title>
+            </svg>
+          </a>
+          <a
+            href="https://youtube.com/@al_hazera25?si=uvmAm1PdpH1_I8vk"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="link1"
+            >
+              <path
+                d="M23.498 6.186c-.27-1.001-1.057-1.778-2.04-2.044C19.655 3.5 12 3.5 12 3.5s-7.655 0-9.457.642c-.983.266-1.77 1.043-2.04 2.044C0 8.065 0 12.001 0 12.001s0 3.936.503 5.815c.27 1.001 1.057 1.778 2.04 2.044 1.802.641 9.457.641 9.457.641s7.655 0 9.457-.641c.983-.266 1.77-1.043 2.04-2.044.503-1.879.503-5.815.503-5.815s0-3.936-.503-5.815zM9.751 15.542V8.457l6.498 3.542-6.498 3.543z"
+                fill="#FF0000"
+              />
+              <title>subscribe saya di youtube</title>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/al_hazera/?hl=en" target="_blank" rel="noopener"> 
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="link1"
+            >
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.331 3.608 1.308.975.975 1.246 2.242 1.308 3.608.059 1.266.069 1.645.069 4.851 0 3.204-.012 3.583-.07 4.85-.062 1.366-.332 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.059-1.645.069-4.85.069-3.204 0-3.583-.012-4.85-.07-1.366-.062-2.633-.332-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608-.059-1.266-.069-1.645-.069-4.851 0-3.204.012-3.583.07-4.85.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308 1.266-.059 1.645-.069 4.85-.069zM12 0C8.741 0 8.332.011 7.052.068c-1.28.058-2.623.328-3.65 1.355C2.376 2.944 2.106 4.287 2.048 5.568.99 7.847 1 8.255 1 12.001c0 3.746.011 4.154.068 5.433.058 1.281.328 2.624 1.355 3.651 1.028 1.028 2.37 1.298 3.651 1.355 1.279.057 1.687.068 5.433.068 3.746 0 4.154-.011 5.433-.068 1.281-.058 2.624-.328 3.651-1.355 1.028-1.028 1.298-2.37 1.355-3.651.057-1.279.068-1.687.068-5.433 0-3.746-.011-4.154-.068-5.433-.058-1.281-.328-2.624-1.355-3.651-1.028-1.028-2.37-1.298-3.651-1.355C16.332.011 15.924 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 2.88 0 1.44 1.44 0 0 0-2.88 0z"
+                fill="#FF0000"
+              />
+              <title>Ikuti saya di instagram</title>
+            </svg>
+          </a>
+        </div>
+        <div>
+          <p class="text-footer1">2025 Al Hazera25.</p>
+        </div>
+      </footer>
+</body>
+</html>
