@@ -161,6 +161,8 @@
     background-color: rgba(167, 172, 173, 0.493);
     color: black;
     border-radius: 5px;
+    margin-left: 0;
+    margin-right: 5;
   }
 
   .scroll-teks {
